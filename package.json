@@ -1,0 +1,13 @@
+{
+    "name": "medical-store-inventory-system",
+    "private": true,
+    "scripts": {
+        "install:all": "npm install --prefix backend && npm install --prefix frontend",
+        "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+        "server": "npm run dev --prefix backend",
+        "client": "npm run dev --prefix frontend"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
